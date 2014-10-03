@@ -1,0 +1,43 @@
+<ComponentGenerator>
+<ContentInfo><Language>RScript</Language></ContentInfo><ComponentInfo>
+<Version name = "1.0.1" />
+<Component version="1.0.1" name="TS_Autocorrelation" type= "ALGORITHM" displayTypeOrder="2" subType="CUSTOM_SCRIPT_COMP" uid="TS_Autocorrelation" className="com.sap.pa.script.component.RScriptComponent"  inputCardinality="1..1" outputCardinality="0..n" vendor="R" ExecutionMode="outDB" ><Resources/>
+<Locales size="1">
+<Locale localeValue="en" />
+</Locales>
+<Tooltips size="1">
+<Tooltip locale="en">
+</Tooltip>
+</Tooltips>
+<Properties size="5">
+<Property name="PAES_COMPONENT_INSTANCE_PARENT" value="d97042bc-9032-4f64-9861-13513001069f" encrypted="false" />
+<Property name="PAES_COMPONENT_INSTANCE" value="TS_Autocorrelation" encrypted="false" />
+<Property name="COMP_PARAMS" value="[{&quot;paramName&quot;:&quot;data&quot;,&quot;paramValue&quot;:null,&quot;uiType&quot;:&quot;TEXTBOX&quot;,&quot;customViewClassName&quot;:&quot;&quot;,&quot;uiDetail&quot;:{&quot;displayName&quot;:&quot;data&quot;,&quot;dataType&quot;:&quot;STRING&quot;,&quot;allowedInput&quot;:{},&quot;description&quot;:&quot;&quot;,&quot;descriptor&quot;:&quot;&quot;,&quot;errorMsg&quot;:&quot;&quot;,&quot;isEditable&quot;:true,&quot;isEnabled&quot;:true,&quot;isMandatory&quot;:true,&quot;isHidden&quot;:true,&quot;lov&quot;:[],&quot;addSelectInLov&quot;:false,&quot;isMultiSelect&quot;:false,&quot;fileChooser&quot;:{&quot;fileExtension&quot;:&quot;*&quot;,&quot;fileExtensionString&quot;:&quot;&quot;,&quot;isSave&quot;:false}},&quot;customData&quot;:{}},{&quot;paramName&quot;:&quot;input&quot;,&quot;paramValue&quot;:null,&quot;uiType&quot;:&quot;COMBOBOX&quot;,&quot;customViewClassName&quot;:&quot;&quot;,&quot;uiDetail&quot;:{&quot;displayName&quot;:&quot;TARGET COLUMNS NAME&quot;,&quot;dataType&quot;:&quot;STRING&quot;,&quot;allowedInput&quot;:{},&quot;description&quot;:&quot;&quot;,&quot;descriptor&quot;:&quot;&quot;,&quot;errorMsg&quot;:&quot;&quot;,&quot;isEditable&quot;:false,&quot;isEnabled&quot;:true,&quot;isMandatory&quot;:true,&quot;isHidden&quot;:false,&quot;lov&quot;:[],&quot;addSelectInLov&quot;:false,&quot;isMultiSelect&quot;:false,&quot;fileChooser&quot;:{&quot;fileExtension&quot;:&quot;*&quot;,&quot;fileExtensionString&quot;:&quot;&quot;,&quot;isSave&quot;:false}},&quot;customData&quot;:{&quot;isMetadataRequired&quot;:true,&quot;filter&quot;:&quot;ALL&quot;}},{&quot;paramName&quot;:&quot;startDate&quot;,&quot;paramValue&quot;:&quot;&quot;,&quot;uiType&quot;:&quot;TEXTBOX&quot;,&quot;customViewClassName&quot;:&quot;&quot;,&quot;uiDetail&quot;:{&quot;displayName&quot;:&quot;START YEAR&quot;,&quot;dataType&quot;:&quot;INTEGER&quot;,&quot;allowedInput&quot;:{},&quot;description&quot;:&quot;&quot;,&quot;descriptor&quot;:&quot;&quot;,&quot;errorMsg&quot;:&quot;&quot;,&quot;isEditable&quot;:true,&quot;isEnabled&quot;:true,&quot;isMandatory&quot;:true,&quot;isHidden&quot;:false,&quot;lov&quot;:[{&quot;index&quot;:0,&quot;key&quot;:&quot;&quot;,&quot;text&quot;:&quot;&quot;}],&quot;addSelectInLov&quot;:false,&quot;isMultiSelect&quot;:false,&quot;fileChooser&quot;:{&quot;fileExtension&quot;:&quot;*&quot;,&quot;fileExtensionString&quot;:&quot;&quot;,&quot;isSave&quot;:false}},&quot;customData&quot;:{&quot;isMetadataRequired&quot;:false,&quot;filter&quot;:&quot;ALL&quot;}},{&quot;paramName&quot;:&quot;Quarter&quot;,&quot;paramValue&quot;:&quot;&quot;,&quot;uiType&quot;:&quot;TEXTBOX&quot;,&quot;customViewClassName&quot;:&quot;&quot;,&quot;uiDetail&quot;:{&quot;displayName&quot;:&quot;START QUARTER&quot;,&quot;dataType&quot;:&quot;INTEGER&quot;,&quot;allowedInput&quot;:{},&quot;description&quot;:&quot;&quot;,&quot;descriptor&quot;:&quot;&quot;,&quot;errorMsg&quot;:&quot;&quot;,&quot;isEditable&quot;:true,&quot;isEnabled&quot;:true,&quot;isMandatory&quot;:true,&quot;isHidden&quot;:false,&quot;lov&quot;:[{&quot;index&quot;:0,&quot;key&quot;:&quot;&quot;,&quot;text&quot;:&quot;&quot;}],&quot;addSelectInLov&quot;:false,&quot;isMultiSelect&quot;:false,&quot;fileChooser&quot;:{&quot;fileExtension&quot;:&quot;*&quot;,&quot;fileExtensionString&quot;:&quot;&quot;,&quot;isSave&quot;:false}},&quot;customData&quot;:{&quot;isMetadataRequired&quot;:false,&quot;filter&quot;:&quot;ALL&quot;}}]" encrypted="false" />
+<Property name="COMP_PARAMS_MODEL" value="[]" encrypted="false" />
+<Property name="IS_SAVE_MODEL_ALLOWED" value="false" encrypted="false" />
+</Properties>
+</Component>
+</ComponentInfo>
+<exprDict>
+</exprDict>
+<AlgoScriptParamMetadata function="tsExplore" inputVariable="data" outputVariable="out" modelVariable="model" hasVisualization="true" hasPMML="false" hasSummary="true" isSaveModelAllowed="false">
+<Params size="4">
+<ScriptParam scriptParamName="data" paramName="data" type="STRING"/>
+<ScriptParam scriptParamName="input" paramName="input" type="COLUMN_LIST"/>
+<ScriptParam scriptParamName="startDate" paramName="startDate" type="NUMERIC"/>
+<ScriptParam scriptParamName="Quarter" paramName="Quarter" type="NUMERIC"/>
+</Params>
+<MetaDataInfo>
+<Attributes masterSet="ALL" size="0" >
+</Attributes>
+</MetaDataInfo>
+</AlgoScriptParamMetadata>
+<ModelScriptParamMetadata function="--Select--" inputVariable="--Select--" outputVariable="" modelVariable="--Select--" hasVisualization="false" hasPMML="false" hasSummary="false">
+<Params size="0">
+</Params>
+<MetaDataInfo>
+<Attributes masterSet="ALL" size="0" >
+</Attributes>
+</MetaDataInfo>
+</ModelScriptParamMetadata>
+</ComponentGenerator>

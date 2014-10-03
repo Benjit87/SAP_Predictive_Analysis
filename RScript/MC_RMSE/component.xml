@@ -1,0 +1,45 @@
+<ComponentGenerator>
+<ContentInfo><Language>RScript</Language></ContentInfo><ComponentInfo>
+<Version name = "1.0.1" />
+<Component version="1.0.1" name="MC_RMSE" type= "ALGORITHM" displayTypeOrder="2" subType="CUSTOM_SCRIPT_COMP" uid="MC_RMSE" className="com.sap.pa.script.component.RScriptComponent"  inputCardinality="1..1" outputCardinality="0..n" vendor="R" ExecutionMode="outDB" ><Resources/>
+<Locales size="1">
+<Locale localeValue="en" />
+</Locales>
+<Tooltips size="1">
+<Tooltip locale="en">
+</Tooltip>
+</Tooltips>
+<Properties size="5">
+<Property name="PAES_COMPONENT_INSTANCE_PARENT" value="d97042bc-9032-4f64-9861-13513001069f" encrypted="false" />
+<Property name="PAES_COMPONENT_INSTANCE" value="MC_RMSE" encrypted="false" />
+<Property name="COMP_PARAMS" value="[{&quot;paramName&quot;:&quot;data&quot;,&quot;paramValue&quot;:null,&quot;uiType&quot;:&quot;TEXTBOX&quot;,&quot;customViewClassName&quot;:&quot;&quot;,&quot;uiDetail&quot;:{&quot;displayName&quot;:&quot;data&quot;,&quot;dataType&quot;:&quot;STRING&quot;,&quot;allowedInput&quot;:{},&quot;description&quot;:&quot;&quot;,&quot;descriptor&quot;:&quot;&quot;,&quot;errorMsg&quot;:&quot;&quot;,&quot;isEditable&quot;:true,&quot;isEnabled&quot;:true,&quot;isMandatory&quot;:true,&quot;isHidden&quot;:true,&quot;lov&quot;:[],&quot;addSelectInLov&quot;:false,&quot;isMultiSelect&quot;:false,&quot;fileChooser&quot;:{&quot;fileExtension&quot;:&quot;*&quot;,&quot;fileExtensionString&quot;:&quot;&quot;,&quot;isSave&quot;:false}},&quot;customData&quot;:{}},{&quot;paramName&quot;:&quot;actual&quot;,&quot;paramValue&quot;:null,&quot;uiType&quot;:&quot;COMBOBOX&quot;,&quot;customViewClassName&quot;:&quot;&quot;,&quot;uiDetail&quot;:{&quot;displayName&quot;:&quot;ACTUAL&quot;,&quot;dataType&quot;:&quot;STRING&quot;,&quot;allowedInput&quot;:{},&quot;description&quot;:&quot;&quot;,&quot;descriptor&quot;:&quot;&quot;,&quot;errorMsg&quot;:&quot;&quot;,&quot;isEditable&quot;:false,&quot;isEnabled&quot;:true,&quot;isMandatory&quot;:true,&quot;isHidden&quot;:false,&quot;lov&quot;:[],&quot;addSelectInLov&quot;:false,&quot;isMultiSelect&quot;:false,&quot;fileChooser&quot;:{&quot;fileExtension&quot;:&quot;*&quot;,&quot;fileExtensionString&quot;:&quot;&quot;,&quot;isSave&quot;:false}},&quot;customData&quot;:{&quot;isMetadataRequired&quot;:true,&quot;filter&quot;:&quot;ALL&quot;}},{&quot;paramName&quot;:&quot;predicted&quot;,&quot;paramValue&quot;:null,&quot;uiType&quot;:&quot;COMBOBOX&quot;,&quot;customViewClassName&quot;:&quot;&quot;,&quot;uiDetail&quot;:{&quot;displayName&quot;:&quot;PREDICTED&quot;,&quot;dataType&quot;:&quot;STRING&quot;,&quot;allowedInput&quot;:{},&quot;description&quot;:&quot;&quot;,&quot;descriptor&quot;:&quot;&quot;,&quot;errorMsg&quot;:&quot;&quot;,&quot;isEditable&quot;:false,&quot;isEnabled&quot;:true,&quot;isMandatory&quot;:true,&quot;isHidden&quot;:false,&quot;lov&quot;:[],&quot;addSelectInLov&quot;:false,&quot;isMultiSelect&quot;:false,&quot;fileChooser&quot;:{&quot;fileExtension&quot;:&quot;*&quot;,&quot;fileExtensionString&quot;:&quot;&quot;,&quot;isSave&quot;:false}},&quot;customData&quot;:{&quot;isMetadataRequired&quot;:true,&quot;filter&quot;:&quot;ALL&quot;}},{&quot;paramName&quot;:&quot;modelname&quot;,&quot;paramValue&quot;:null,&quot;uiType&quot;:&quot;COMBOBOX&quot;,&quot;customViewClassName&quot;:&quot;&quot;,&quot;uiDetail&quot;:{&quot;displayName&quot;:&quot;MODELTYPE&quot;,&quot;dataType&quot;:&quot;STRING&quot;,&quot;allowedInput&quot;:{},&quot;description&quot;:&quot;&quot;,&quot;descriptor&quot;:&quot;&quot;,&quot;errorMsg&quot;:&quot;&quot;,&quot;isEditable&quot;:false,&quot;isEnabled&quot;:true,&quot;isMandatory&quot;:true,&quot;isHidden&quot;:false,&quot;lov&quot;:[],&quot;addSelectInLov&quot;:false,&quot;isMultiSelect&quot;:false,&quot;fileChooser&quot;:{&quot;fileExtension&quot;:&quot;*&quot;,&quot;fileExtensionString&quot;:&quot;&quot;,&quot;isSave&quot;:false}},&quot;customData&quot;:{&quot;isMetadataRequired&quot;:true,&quot;filter&quot;:&quot;ALL&quot;}}]" encrypted="false" />
+<Property name="COMP_PARAMS_MODEL" value="[]" encrypted="false" />
+<Property name="IS_SAVE_MODEL_ALLOWED" value="false" encrypted="false" />
+</Properties>
+</Component>
+</ComponentInfo>
+<exprDict>
+</exprDict>
+<AlgoScriptParamMetadata function="MC_RMSE" inputVariable="data" outputVariable="out" modelVariable="" hasVisualization="true" hasPMML="false" hasSummary="false" isSaveModelAllowed="false">
+<Params size="4">
+<ScriptParam scriptParamName="data" paramName="data" type="STRING"/>
+<ScriptParam scriptParamName="actual" paramName="actual" type="COLUMN_LIST"/>
+<ScriptParam scriptParamName="predicted" paramName="predicted" type="COLUMN_LIST"/>
+<ScriptParam scriptParamName="modelname" paramName="modelname" type="COLUMN_LIST"/>
+</Params>
+<MetaDataInfo>
+<Attributes masterSet="NONE" size="2" >
+<AddColumn name="MODELNAME" isVariable="false" type="LongString"/>
+<AddColumn name="RMSE" isVariable="false" type="Double"/>
+</Attributes>
+</MetaDataInfo>
+</AlgoScriptParamMetadata>
+<ModelScriptParamMetadata function="--Select--" inputVariable="--Select--" outputVariable="" modelVariable="--Select--" hasVisualization="false" hasPMML="false" hasSummary="false">
+<Params size="0">
+</Params>
+<MetaDataInfo>
+<Attributes masterSet="ALL" size="0" >
+</Attributes>
+</MetaDataInfo>
+</ModelScriptParamMetadata>
+</ComponentGenerator>
